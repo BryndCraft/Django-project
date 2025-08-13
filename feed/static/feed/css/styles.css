@@ -1,0 +1,119 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    background-color: #fafafa;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #262626;
+}
+
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #262626 !important;
+}
+
+/* Cards de posts */
+.card {
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.card-header {
+    background-color: white;
+    padding: 14px 16px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Perfil de usuario */
+.profile-pic {
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-stats div {
+    margin: 0 15px;
+    text-align: center;
+}
+
+/* Formularios */
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+    padding: 8px 12px;
+}
+
+.btn-primary {
+    background-color: #0095f6;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0080e0;
+}
+
+/* Grid de posts en perfil */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.post-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+/* Comentarios */
+.comment {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* Likes */
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .post-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+}
